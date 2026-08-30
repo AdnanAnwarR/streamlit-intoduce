@@ -3,6 +3,13 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
+st.set_page_config(
+    page_title="Farrel Portfolio",
+    page_icon="🔥",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 # Title and headers
 st.title("Main Title")
 st.header("Section Header")
@@ -100,9 +107,3 @@ with st.expander("Show code"):
     st.code("model.fit(X, y)")
     
     
-st.set_page_config(
-    page_title="Farrel Portfolio",
-    page_icon="🔥",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
